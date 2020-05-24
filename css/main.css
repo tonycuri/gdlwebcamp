@@ -105,6 +105,10 @@ html {
 }
 body{
   background-color: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+h2{
+  font-family: 'Oswald', sans-serif;
 }
 
 /*Header*/
@@ -158,6 +162,9 @@ p.fecha{
 }
 p.ciudad{
   float: right;
+}
+h1.nombre-sitio{
+  font-family: 'PT Sans', sans-serif;
 }
 /* ==========================================================================
    Helper classes
