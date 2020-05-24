@@ -211,6 +211,7 @@ h1.nombre-sitio{
 }
 .logo {
   width: 80%;
+  float: left;
 }
 .logo img{
   width: 100%;
@@ -218,12 +219,13 @@ h1.nombre-sitio{
 @media (min-width: 768px) {
   .logo{
     width: 33.3%;
-    float: left;
   }
 }
 /*Navegacion principal*/
 .navegacion-principal{
-  display:none;
+  display: none;
+  width: 100%;
+  margin-top: 94px;
 }
 .navegacion-principal a{
   font-family: 'Oswald', sans-serif;
@@ -232,6 +234,10 @@ h1.nombre-sitio{
   text-transform: uppercase;
   text-decoration: none;
   transition: all .3s ease;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .navegacion-principal a:hover{
   background-color:#fe4918;
@@ -250,14 +256,39 @@ h1.nombre-sitio{
     float: right;
     display:block;
     text-align: right;
+    margin-top: 0;
   }
   .navegacion-principal a{
-    margin-right: 10px;
     padding: 10px;
     display: inline-block;
+    width: auto;
+    display:inline-block;
+    text-align: center;
+    margin: 0 10px 0 0;
   }
 }
-
+/**Menu movil**/
+.menu-movil{
+  width: 60px;
+  display: block;
+  float: right;
+  text-align: right;
+  margin-top: 12px;
+}
+.menu-movil:hover{
+  cursor: pointer;
+}
+.menu-movil span{
+  height: 8px;
+  margin-bottom: 6px;
+  background-color: white;
+  display:block;
+}
+@media (min-width: 768px) {
+  .menu-movil{
+    display:none;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
