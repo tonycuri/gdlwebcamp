@@ -682,7 +682,43 @@ blockquote p:before{
   }
 }
 
-
+/*SITE-FOOTER*/
+.site-footer{
+  background-color: #353535;
+  padding-top: 40px;
+  margin-top: 20px;
+}
+.site-footer .contenedor > div{
+  color:white;
+  padding: 0 20px;
+  /* text-align: justify; */
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .site-footer .contenedor > div{
+    width: 33.3%;
+    float: left;
+  }
+}
+.site-footer h3{
+  color:white;
+  text-transform: uppercase;
+  font-family: var(--oswald);
+  margin-bottom: 20px;
+}
+.site-footer h3 span{
+  color:var(--naranja);
+}
+.site-footer .ultimos-tweets li{
+  margin-bottom: 10px;
+}
+p.copyright{
+  background-color: #2e2e2e;
+  color:white;
+  padding: 10px 0;
+  margin-top: 30px 0;
+  text-align: center;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
