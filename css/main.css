@@ -787,6 +787,38 @@ h4{
   color:#fe4918;
   font-weight: bold;
 }
+
+/***Resumen registro***/
+.resumen p{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.resumen .extras{
+  float: left;
+  width: 50%;
+  padding: 30px;
+}
+.resumen .extras .orden{
+  text-align-last: left;
+  margin-bottom: 10px;
+}
+.resumen .extras .orden input{
+  margin: 10px 0 0 0;
+}
+.resumen .total{
+  float: right;
+  width: 50%;
+  padding: 30px;
+}
+.resumen input{
+  display: block;
+  margin: 10px auto;
+}
+.resumen .button{
+  margin-top: 30px;
+  border:none;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
