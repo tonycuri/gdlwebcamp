@@ -818,7 +818,16 @@ h4{
   margin-top: 30px;
   border:none;
 }
-
+#lista-productos{
+  background-color: #e1e1e1;
+  padding: 20px 60px;
+  display:none;
+}
+#suma-total{
+  text-align: center;
+  font-size: 2rem;
+  color: var(--naranja);
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

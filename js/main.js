@@ -19,6 +19,7 @@
     var errorDiv = document.getElementById('error');
     var botonRegistro = document.getElementById('btnRegistro');
     var lista_productos = document.getElementById('lista-productos');
+    var suma = document.getElementById('suma-total');
 
     //extras
     var etiquetas = document.getElementById('etiquetas');
@@ -57,10 +58,14 @@
           listadoProductos.push(cantEtiquetas + 'Etiquetas');
         }
 
+        lista_productos.style.display ="block";
         lista_productos.innerHTML = '';
         for(var i = 0; i<listadoProductos.length; i++){
           lista_productos.innerHTML += listadoProductos[i]+ '</br>';
         }
+
+        suma.innerHTML= '$ ' + totalPagar.toFixed(2);
+
       }
     }
 
