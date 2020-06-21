@@ -765,7 +765,7 @@ h4{
 }
 .contenido-dia{
   padding: 20px;
-  /* display:none; */
+  display:none;
 }
 @media (min-width: 768px) {
   .contenido-dia > div{
