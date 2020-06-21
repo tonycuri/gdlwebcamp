@@ -828,6 +828,21 @@ h4{
   font-size: 2rem;
   color: var(--naranja);
 }
+
+input[disabled].button{
+  opacity: .5;
+}
+
+#error{
+  clear: both;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--naranja);
+  color:#ffffff;
+  font-weight: bold;
+  display: none;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
