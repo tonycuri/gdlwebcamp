@@ -25,17 +25,18 @@
     var etiquetas = document.getElementById('etiquetas');
     var camisas = document.getElementById('camisa_evento');
 
-    calcular.addEventListener('click',calcularMontos);
+    //condicionamos calcular para que no de error en las otras paginas html
+    if(calcular){
+      calcular.addEventListener('click',calcularMontos);
+      pase_dia.addEventListener('blur',mostrarDias);
+      pase_dosdias.addEventListener('blur',mostrarDias);
+      pase_completo.addEventListener('blur',mostrarDias);
 
-    pase_dia.addEventListener('blur',mostrarDias);
-    pase_dosdias.addEventListener('blur',mostrarDias);
-    pase_completo.addEventListener('blur',mostrarDias);
-
-    nombre.addEventListener('blur', validarCampos);
-    apellido.addEventListener('blur', validarCampos);
-    email.addEventListener('blur', validarCampos);
-    email.addEventListener('blur',validarMail);
-
+      nombre.addEventListener('blur', validarCampos);
+      apellido.addEventListener('blur', validarCampos);
+      email.addEventListener('blur', validarCampos);
+      email.addEventListener('blur',validarMail);
+    }
 
     function calcularMontos(event){
       event.preventDefault();
