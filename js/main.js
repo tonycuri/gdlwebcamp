@@ -12,8 +12,10 @@
         }).addTo(map);
 
         L.marker([-34.674123, -58.458976]).addTo(map)
-        .bindPopup('GDLWebcamp entradas disponibles')
-        .openPopup();
+        .bindPopup('GDLWebcamp 2020 <br> Entradas disponibles')
+        .openPopup()
+        .bindTooltip('Un Tooltip')
+        .openTooltip();
     }
 
     //campos datos usuarios
